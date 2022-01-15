@@ -1,0 +1,121 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Maitree&family=Poppins:wght@400;500&family=Rubik&display=swap');
+/* common styles or utilities */
+main {
+    font-family:'Poppins', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 24px;
+}
+header {
+    display: flex;
+}
+#heading-text {
+    margin-top: 60px;
+}
+.half-width {
+    width: 50%;
+}
+.half-width img {
+    width: 58%;
+    padding-left: 20%;
+}
+.link-button {
+    text-decoration: none;
+    background-color: rgb(214, 66, 66);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+}
+#link-button {
+    text-decoration: none;
+    color: rgb(214, 66, 66);
+    text-align: right;
+    margin-top: 50px;
+    font-weight: 700;
+
+}
+
+
+/*-----------------------
+ collections styles 
+ -----------------------*/
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.collection .collection-detail {
+    margin: 20px;
+}
+.collection .collection-banner img {
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+}
+#heading-image :hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+.collection-info {
+    display: flex;
+    align-items: center;
+}
+.fa-star {
+    font-size: 12px;
+}
+.fa-star.filled {
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+.collection {
+    box-shadow: 10px 10px 40px gray;  
+    border-radius: 5px;
+    height: 100%;
+    background-color: white;
+}
+footer>h3 {
+    padding-top: 25px;    
+}
+.fab {
+    color: black;
+}
+footer {
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    background-color:burlywood;
+    margin-top: 24px;
+    padding-bottom: 5px;
+}
+
+ /* Media Queries */
+ @media only screen and (max-width:688px) {
+
+    .half-width, .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-width, .collection {
+       flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .half-width, .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .half-width {
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
